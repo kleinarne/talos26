@@ -3,5 +3,6 @@
   "extends": [
     "config:recommended",
     "github>trueforge-org/renovate-config"
-  ]
+  ],
+   "assignees": ["kleinarne"]
 }
