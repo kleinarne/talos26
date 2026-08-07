@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       chart: paperless-ngx
-      version: 14.15.3
+      version: 15.2.4
       sourceRef:
         kind: HelmRepository
         name: truecharts
@@ -39,9 +39,8 @@ spec:
           containers:
             main:
               env:
-                PAPERLESS_CONSUMER_POLLING: 10
-                PAPERLESS_CONSUMER_POLLING_DELAY: 5
-                PAPERLESS_CONSUMER_RETRY_COUNT: 10
+                PAPERLESS_CONSUMER_POLLING_INTERVAL: 10
+                PAPERLESS_CONSUMER_STABILITY_DELAY: 5
                 PAPERLESS_URL: https://paperless.${DOMAIN_0}
                 PAPERLESS_OCR_LANGUAGE: "eng"
                 PAPERLESS_OCR_LANGUAGES: "eng deu"
