@@ -52,6 +52,13 @@ spec:
         integrations:
           metallb:
             enabled: true
+      workload:
+        main:
+          podSpec:
+            containers:
+              main:
+                env:
+                  RUN_CHOWN: false
       stun:
         type: LoadBalancer
         loadBalancerIP: ${UNIFI_IP}
