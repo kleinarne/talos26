@@ -4,4 +4,4 @@ resources:
   - external-services
 #  - media
 #  - productivity
-#  - infrastructure
+  - infrastructure
