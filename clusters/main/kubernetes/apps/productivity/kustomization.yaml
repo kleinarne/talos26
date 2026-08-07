@@ -8,4 +8,4 @@ resources:
 # MIGRATE PAPERLESS TO V3!
 #  - paperless-ngx/ks.yaml
 #############################
-#  - nextcloud/ks.yaml
+  - nextcloud/ks.yaml
