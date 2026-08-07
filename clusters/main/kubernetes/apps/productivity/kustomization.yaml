@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 #  - vaultwarden/ks.yaml
 #  - immich/ks.yaml
-#  - actualserver/ks.yaml
+  - actualserver/ks.yaml
 #############################
 # MIGRATE PAPERLESS TO V3!
 #  - paperless-ngx/ks.yaml
