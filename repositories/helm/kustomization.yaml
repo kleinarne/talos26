@@ -15,4 +15,3 @@ resources:
   - prometheus-community.yaml
   - truecharts.yaml
 # more goes here!
-  - tibuntu.yaml
