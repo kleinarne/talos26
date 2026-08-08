@@ -6,5 +6,6 @@ metadata:
   name: tibuntu
   namespace: flux-system
 spec:
+  type: oci
   interval: 1h
   url: https://tibuntu.github.io/homeassistant-kubernetes/
