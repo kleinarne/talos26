@@ -4,3 +4,5 @@ resources:
   - headlamp/ks.yaml
   - kube-prometheus-stack/ks.yaml
   - grafana/ks.yaml
+  - truenas-exporter/ks.yaml
+  - ha-k8s-rbac/ks.yaml
