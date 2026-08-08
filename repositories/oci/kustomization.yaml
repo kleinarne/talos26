@@ -5,4 +5,4 @@ kind: Kustomization
 resources:
   - flux-manifests.yaml
   - tuppr.yaml
-#  - tibuntu.yaml
+  - tibuntu.yaml
