@@ -33,5 +33,6 @@ spec:
     TZ: Europe/Berlin
     global:
       stopAll: false
+    mode: minimal
     tokenSecret:
       create: true
