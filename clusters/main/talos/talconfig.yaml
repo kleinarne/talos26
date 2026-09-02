@@ -42,7 +42,6 @@ nodes:
           ip: ${VIP}
     patches:
       - '@./patches/garbagecollection.yaml'
-      - "@./patches/nvidia.yaml"
 controlPlane:
   patches:
     - '@./patches/controlplane.yaml'
@@ -90,8 +89,6 @@ worker:
           - siderolabs/util-linux-tools
           - siderolabs/iscsi-tools
           - siderolabs/qemu-guest-agent
-          - siderolabs/nonfree-kmod-nvidia-lts
-          - siderolabs/nvidia-container-toolkit-lts
   machineFiles:
   - content: |
       [plugins."io.containerd.cri.v1.images"]
