@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - cloudflared/ks.yaml
   - librespeed/ks.yaml
-  - unifi/ks.yaml
+#  - unifi/ks.yaml
