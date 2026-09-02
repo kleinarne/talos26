@@ -37,23 +37,6 @@ spec:
   uninstall:
     keepHistory: false
   values:
-    persistence:
-      data:
-        enabled: true
-        targetSelector:
-          main:
-            main:
-              mountPath: /usr/lib/restore
-        volsync:
-          - name: backup
-            type: restic
-            credentials: garage
-            dest:
-              enabled: true
-            src:
-              enabled: false
-              trigger:
-                schedule: 32 0 * * *
     ingress:
       main:
         enabled: true
@@ -68,11 +51,3 @@ spec:
     resources:
       requests:
         cpu: 10m
-    credentials:
-      garage:
-        type: s3
-        url: ${GARAGE_S3_URL}
-        bucket: ${GARAGE_S3_BUCKET}
-        accessKey: ${GARAGE_S3_ACCESSKEY}
-        secretKey: ${GARAGE_S3_SECRETKEY}
-        encrKey: ${GARAGE_S3_ENCRYPTIONKEY}
