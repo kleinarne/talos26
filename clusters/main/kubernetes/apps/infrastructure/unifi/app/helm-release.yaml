@@ -45,10 +45,6 @@ spec:
               enabled: false
               trigger:
                 schedule: 32 0 * * *
-        targetSelector:
-          main:
-            main:
-              mountPath: /usr/lib/unifi/olddata
     service:
       comm:
         type: LoadBalancer
