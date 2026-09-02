@@ -33,13 +33,6 @@ spec:
     TZ: Europe/Berlin
     global:
       stopAll: false
-    workload:
-      main:
-        podSpec:
-          containers:
-            main:
-              env:
-                RUN_CHOWN: false
     persistence:
       data:
         volsync:
