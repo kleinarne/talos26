@@ -40,7 +40,7 @@ spec:
             type: restic
             credentials: garage
             dest:
-              enabled: true
+              enabled: false
             src:
               enabled: false
               trigger:
