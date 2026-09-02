@@ -84,10 +84,6 @@ spec:
         enabled: true
         ingressClassName: external
         hosts:
-          - host: vaultwarden.${DOMAIN_0}
-            paths:
-              - path: /
-                pathType: Prefix
           - host: vw.${DOMAIN_0}
             paths:
               - path: /
