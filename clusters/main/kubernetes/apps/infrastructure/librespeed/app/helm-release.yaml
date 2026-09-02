@@ -9,7 +9,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: librespeed
+  name: unifi
   namespace: librespeed
 spec:
   interval: 15m
@@ -37,7 +37,18 @@ spec:
   uninstall:
     keepHistory: false
   values:
-
+    persistence:
+      data:
+        volsync:
+          - name: backup
+            type: restic
+            credentials: garage
+            dest:
+              enabled: true
+            src:
+              enabled: false
+              trigger:
+                schedule: 32 0 * * *
     ingress:
       main:
         enabled: true
@@ -52,3 +63,11 @@ spec:
     resources:
       requests:
         cpu: 10m
+    credentials:
+      garage:
+        type: s3
+        url: ${GARAGE_S3_URL}
+        bucket: ${GARAGE_S3_BUCKET}
+        accessKey: ${GARAGE_S3_ACCESSKEY}
+        secretKey: ${GARAGE_S3_SECRETKEY}
+        encrKey: ${GARAGE_S3_ENCRYPTIONKEY}
