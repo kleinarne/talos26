@@ -33,18 +33,6 @@ spec:
     TZ: Europe/Berlin
     global:
       stopAll: false
-    persistence:
-      data:
-        volsync:
-          - name: backup
-            type: restic
-            credentials: garage
-            dest:
-              enabled: false
-            src:
-              enabled: false
-              trigger:
-                schedule: 32 0 * * *
     service:
       comm:
         type: LoadBalancer
