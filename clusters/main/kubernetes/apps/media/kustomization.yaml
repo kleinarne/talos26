@@ -7,4 +7,4 @@ resources:
   - radarr/ks.yaml
   - sonarr/ks.yaml
   - namespace.yaml
-  - jellyfin/ks.yaml
+#  - jellyfin/ks.yaml
