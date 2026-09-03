@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
   - vaultwarden/ks.yaml
 #  - immich/ks.yaml
-#  - actualserver/ks.yaml
+  - actualserver/ks.yaml
   - paperless-ngx/ks.yaml
 #  - nextcloud/ks.yaml
