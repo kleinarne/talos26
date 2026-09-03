@@ -46,7 +46,7 @@ spec:
       garage:
         type: s3
         url: ${GARAGE_S3_URL}
-        bucket: ${GARAGE_S3_BUCKET}
+        bucket: ${GARAGE_S3_BUCKET}-testing
         accessKey: ${GARAGE_S3_ACCESSKEY}
         secretKey: ${GARAGE_S3_SECRETKEY}
         encrKey: ${GARAGE_S3_ENCRYPTIONKEY}
