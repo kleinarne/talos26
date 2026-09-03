@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - prowlarr/ks.yaml
   - pvc.yaml
-#  - qbittorrent/ks.yaml
+  - qbittorrent/ks.yaml
 #  - radarr/ks.yaml
 #  - sonarr/ks.yaml
   - namespace.yaml
