@@ -56,7 +56,7 @@ spec:
         mode: recovery
         password: ${VAULTWARDEN_CNPG_PASSWORD}
         backups:
-          enabled: true
+          enabled: false
           credentials: garage
           scheduledBackups:
             - name: daily-backup
@@ -76,7 +76,7 @@ spec:
             dest:
               enabled: true
             src:
-              enabled: true
+              enabled: false
               trigger:
                 schedule: 27 0 * * *
     ingress:

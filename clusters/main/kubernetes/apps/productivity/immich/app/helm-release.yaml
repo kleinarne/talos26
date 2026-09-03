@@ -38,7 +38,7 @@ spec:
         mode: recovery
         password: ${IMMICH_CNPG_PASSWORD}
         backups:
-          enabled: true
+          enabled: false
           credentials: garage
           scheduledBackups:
             - name: daily-backup

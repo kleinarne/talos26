@@ -51,7 +51,7 @@ spec:
         mode: recovery
         password: ${NEXTCLOUD_CNPG_PASSWORD}
         backups:
-          enabled: true
+          enabled: false
           credentials: garage
           scheduledBackups:
             - name: daily-backup
@@ -71,7 +71,7 @@ spec:
             dest:
               enabled: true
             src:
-              enabled: true
+              enabled: false
               trigger:
                 schedule: 41 0 * * *
       data:
@@ -86,7 +86,7 @@ spec:
             dest:
               enabled: true
             src:
-              enabled: true
+              enabled: false
               trigger:
                 schedule: 43 0 * * *
     ingress:
@@ -102,29 +102,6 @@ spec:
           certManager:
             certificateIssuer: domain-0-le-prod
             enabled: true
-#      legacy:
-#        enabled: true
-#        ingressClassName: external
-#        hosts:
-#          - host: nextcloud.${DOMAIN_0_LOCAL}
-#            paths:
-#              - path: /
-#                pathType: Prefix
-#        integrations:
-#          certManager:
-#            certificateIssuer: domain-0-le-prod
-#            enabled: true
-#    addons:
-#      codeserver:
-#        enabled: true
-#        ingress:
-#          enabled: true
-#          integrations:
-#            certManager:
-#              enabled: true
-#              certificateIssuer: domain-0-le-prod
-#          hosts:
-#            - host: cs.nextcloud.${DOMAIN_0_LOCAL}
     credentials:
       garage:
         type: s3
