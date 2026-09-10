@@ -6,3 +6,4 @@ resources:
   - actualserver/ks.yaml
   - paperless-ngx/ks.yaml
   - nextcloud/ks.yaml
+  - code-server/ks.yaml
